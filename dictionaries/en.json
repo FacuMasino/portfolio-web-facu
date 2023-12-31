@@ -1,0 +1,54 @@
+{
+	"menu": {
+		"home": "Home",
+		"about": "About",
+		"projects": "Projects",
+		"contact": "Contact"
+	},
+	"section": {
+		"home": {
+			"title": "Hi! I'm",
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus cum quos laborum aliquam saepe nam.",
+			"btnContact": "Get in touch"
+		},
+		"about": {
+			"title": "About me",
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus cum quos laborum aliquam saepe nam. Nulla nesciunt incidunt, sunt provident tempore maxime dolorum mollitia quaerat laboriosam ab tenetur impedit? Nihil!",
+			"sections": [
+				{
+					"title": "Skills",
+					"description": ["Skill 1", "Skill 2", "Skill 3"]
+				},
+				{
+					"title": "Education",
+					"description": ["U 1", "Inst 2"]
+				},
+				{
+					"title": "Certifications",
+					"description": ["C 1", "Cert 2"]
+				}
+		]
+		},
+		"projects": {
+			"title": "My Projects",
+			"list": [
+				{
+					"title": "React E-Commerce WebApp",
+					"description": "Description E-Commerce"
+				},
+				{
+					"title": "Insurance WebApp",
+					"description": "Description Insurance App"
+				},
+				{
+					"title": "Software Factory Landing Page",
+					"description": "Dscription Software Factory Landing"
+				},
+				{
+					"title": "Veterinary Console App - C++",
+					"description": "Description Vete++"
+				}
+			]	
+		}
+	}
+}

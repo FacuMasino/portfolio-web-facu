@@ -1,0 +1,54 @@
+{
+	"menu": {
+		"home": "Inicio",
+		"about": "Sobre mí",
+		"projects": "Proyectos",
+		"contact": "Contacto"
+	},
+	"section": {
+		"home": {
+			"title": "Hola! Soy",
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus cum quos laborum aliquam saepe nam.",
+			"btnContact": "Contactar"
+		},
+		"about": {
+			"title": "Sobre mí",
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus cum quos laborum aliquam saepe nam. Nulla nesciunt incidunt, sunt provident tempore maxime dolorum mollitia quaerat laboriosam ab tenetur impedit? Nihil!",
+			"sections": [
+				{
+					"title": "Habilidades",
+					"description": ["Skill 1", "Skill 2", "Skill 3"]
+				},
+				 {
+					"title": "Educacion",
+					"description": ["U 1", "Inst 2"]
+				},
+				{
+					"title": "Certificaciones",
+					"description": ["C 1", "Cert 2"]
+				}
+			]
+		},
+		"projects": {
+			"title": "Mis Proyectos",
+			"list": [
+				{
+					"title": "React Tienda WebApp",
+					"description": "Description E-Commerce"
+				},
+				{
+					"title": "Cotizador de seguros WebApp",
+					"description": "Description Insurance App"
+				},
+				{
+					"title": "PYME Software Landing Page",
+					"description": "Dscription Software Factory Landing"
+				},
+				{
+					"title": "Veteria App Consola - C++",
+					"description": "Description Vete++"
+				}
+			]
+		}
+	}
+}

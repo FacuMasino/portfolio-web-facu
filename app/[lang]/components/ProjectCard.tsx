@@ -1,0 +1,57 @@
+import Link from 'next/link';
+import React from 'react';
+import { CodeBracketIcon, EyeIcon } from '@heroicons/react/24/outline';
+
+const ProjectCard = ({
+  imgSrc,
+  title,
+  description,
+  link,
+  github,
+}: {
+  imgSrc: string;
+  title: string;
+  description: string;
+  link: string;
+  github: string;
+}) => {
+  return (
+    <div>
+      <div
+        className="group relative h-52 rounded-t-xl md:h-72"
+        style={{
+          background: `url(${imgSrc})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        <div
+          className="overlay invisible absolute left-0 top-0 flex h-full 
+                  w-full items-center justify-center gap-2 bg-[#1d1d1d]
+                  bg-opacity-80 opacity-0 transition-all duration-500 group-hover:visible group-hover:opacity-100"
+        >
+          <Link
+            href={link}
+            target="_blank"
+            className="group/link relative flex h-14 w-14 items-center rounded-full border-2 text-[#c2c2c2] hover:border-white"
+          >
+            <EyeIcon className="m-2 h-10 w-10 cursor-pointer text-[#c2c2c2] group-hover/link:text-white" />
+          </Link>
+          <Link
+            href={github}
+            target="_blank"
+            className="group/link relative flex h-14 w-14 items-center rounded-full border-2 text-[#c2c2c2] hover:border-white"
+          >
+            <CodeBracketIcon className="m-2 h-10 w-10 cursor-pointer text-[#c2c2c2] group-hover/link:text-white" />
+          </Link>
+        </div>
+      </div>
+      <div className="rounded-b-xl bg-[#1d1d1d] px-4 py-6 text-white">
+        <h5 className="mb-2 text-xl font-semibold">{title}</h5>
+        <p className="text-[#c2c2c2]">{description}</p>
+      </div>
+    </div>
+  );
+};
+
+export default ProjectCard;
