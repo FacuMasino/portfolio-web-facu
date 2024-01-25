@@ -31,24 +31,52 @@
 		},
 		"projects": {
 			"title": "My Projects",
+			"tagNames": {
+				"all": "All",
+				"web": "Web",
+				"desktop": "Desktop"
+			},
 			"list": [
 				{
+					"id": 1,
 					"title": "React E-Commerce WebApp",
 					"description": "Description E-Commerce"
 				},
 				{
+					"id": 2,
 					"title": "Insurance WebApp",
 					"description": "Description Insurance App"
 				},
 				{
+					"id": 3,
 					"title": "Software Factory Landing Page",
 					"description": "Dscription Software Factory Landing"
 				},
 				{
+					"id": 4,
 					"title": "Veterinary Console App - C++",
 					"description": "Description Vete++"
+				},
+				{
+					"id": 5,
+					"title": "Print Policies App - C#",
+					"description": "Description Print Insurance Policies"
 				}
 			]	
+		},
+		"contact": {
+			"title": "Ready to talk?",
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus cum quos laborum aliquam saepe nam. Nulla nesciunt incidunt",
+			"name": "Name",
+			"subject": "Subject",
+			"msg": "Message",
+			"btnSend": "Send Email",
+			"placeholders": {
+				"name": "John",
+				"subject": "Job opportunity - Company name",
+				"msg": "Hi Facu! I would like to offer you to...",
+				"email": "john@yourcompany.com"
+			}
 		}
 	}
 }

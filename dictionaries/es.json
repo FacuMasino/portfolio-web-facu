@@ -31,24 +31,52 @@
 		},
 		"projects": {
 			"title": "Mis Proyectos",
+			"tagNames": {
+				"all": "Todos",
+				"web": "Web",
+				"desktop": "Escritorio"
+			},
 			"list": [
 				{
+					"id":1,
 					"title": "React Tienda WebApp",
-					"description": "Description E-Commerce"
+					"description": "Descripción E-Commerce"
 				},
 				{
+					"id": 2,
 					"title": "Cotizador de seguros WebApp",
-					"description": "Description Insurance App"
+					"description": "Descripción Insurance App"
 				},
 				{
+					"id": 3,
 					"title": "PYME Software Landing Page",
-					"description": "Dscription Software Factory Landing"
+					"description": "Descripción Software Factory Landing"
 				},
 				{
+					"id": 4,
 					"title": "Veteria App Consola - C++",
-					"description": "Description Vete++"
+					"description": "Descripción Vete++"
+				},
+				{
+					"id": 5,
+					"title": "Imprimir Pólizas App - C#",
+					"description": "Descripción App imprimir pólizas"
 				}
 			]
+		},
+		"contact": {
+			"title": "Hablamos?",
+			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus cum quos laborum aliquam saepe nam. Nulla nesciunt incidunt",
+			"name": "Nombre",
+			"subject": "Asunto",
+			"msg": "Mensaje",
+			"btnSend": "Enviar Email",
+			"placeholders": {
+				"name": "Juan",
+				"subject": "Oportunidad laboral - Nombre empresa",
+				"msg": "Hola Facu! Me gustaría ofrecerte...",
+				"email": "juan@empresa.com"
+			}
 		}
 	}
 }

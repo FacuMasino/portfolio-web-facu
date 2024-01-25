@@ -20,9 +20,7 @@ const ProjectCard = ({
       <div
         className="group relative h-52 rounded-t-xl md:h-72"
         style={{
-          background: `url(${imgSrc})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          background: `center / cover url(${imgSrc})`,
         }}
       >
         <div
