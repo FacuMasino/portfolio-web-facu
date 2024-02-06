@@ -76,7 +76,15 @@
 				"subject": "Oportunidad laboral - Nombre empresa",
 				"msg": "Hola Facu! Me gustaría ofrecerte...",
 				"email": "juan@empresa.com"
-			}
+			},
+			"successMsg": "Mensaje enviado con éxito :)",
+			"errorMsg": "Ocurrió un error al enviar el mensaje, puedes intentar contactarme en LinkedIn :)"
+		},
+		"email": {
+			"greeting": "Hola",
+			"p1": "Gracias por contactarte :)",
+			"p2": "Esta es una copia de tu mensaje:",
+			"p3": "Saludos!"
 		}
 	}
 }

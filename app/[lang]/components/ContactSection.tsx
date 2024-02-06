@@ -1,20 +1,61 @@
+'use client';
 import { type getDictionary } from '@/lib/dictionary';
-import React from 'react';
+import React, { FormEvent, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import githubIcon from '@/public/github.svg';
 import linkedinIcon from '@/public/linkedin.svg';
 import { socialLinks } from '@/app/assets';
+import { disabledElements, sendEmail } from '@/app/utils/helpers';
+import { Locale } from '@/i18n.config';
+
+interface FormElements extends HTMLFormControlsCollection {
+  name: HTMLInputElement;
+  email: HTMLInputElement;
+  subject: HTMLInputElement;
+  message: HTMLInputElement;
+  btnSend: HTMLButtonElement;
+}
+
+interface EmailForm extends HTMLFormElement {
+  readonly elements: FormElements;
+}
 
 const ContactSection = ({
   dictionary,
+  currentLang,
 }: {
   dictionary: Awaited<ReturnType<typeof getDictionary>>['section']['contact'];
+  currentLang: Locale;
 }) => {
+  const [successEmail, setSuccessEmail] = useState(false);
+  const [showStatus, setShowStatus] = useState(false);
+
+  const handleSubmit = async (e: FormEvent<EmailForm>) => {
+    e.preventDefault();
+    const form = e.currentTarget.elements;
+    disabledElements(form, true);
+    // crear objeto con los datos
+    const data = {
+      name: form.name.value,
+      email: form.email.value,
+      subject: form.subject.value,
+      message: form.message.value,
+      lang: currentLang,
+    };
+    // preparar datos para enviar como JSON
+    const JSONData = JSON.stringify(data);
+    // intentar enviar email
+    let success = await sendEmail(JSONData);
+    setSuccessEmail(success);
+    setShowStatus(true);
+    disabledElements(form, false);
+  };
+
   return (
-    <section className="my-12 grid gap-4 py-24 md:grid-cols-2">
+    <section className="my-4 grid gap-4 py-12 md:my-12 md:grid-cols-2 md:py-24">
       <div className="relative">
-        <div className="animate-blob absolute -bottom-20 -left-[20%] hidden h-72 w-72 rounded-full bg-blue-600 opacity-30 blur-xl filter md:block "></div>
+        <div className="absolute -bottom-20 -left-[20%] hidden h-72 w-72 animate-blob rounded-full bg-blue-600 opacity-30 blur-xl filter md:block "></div>
         <div className="relative">
           <h5 className="my-2 text-xl font-semibold text-white">
             {dictionary.title}
@@ -33,7 +74,7 @@ const ContactSection = ({
         </div>
       </div>
       <div className="relative">
-        <form className="flex flex-col gap-4">
+        <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <div className="flex flex-col gap-2 md:flex-row">
             <div className="md:w-1/2">
               <label
@@ -77,7 +118,7 @@ const ContactSection = ({
             </label>
             <input
               type="text"
-              id="name"
+              id="email"
               required
               className="w-full rounded-lg border border-[#33353F] bg-[#18191E]
                          p-2.5 text-sm text-gray-100 placeholder-[#9CA2A9] md:block"
@@ -86,13 +127,13 @@ const ContactSection = ({
           </div>
           <div>
             <label
-              htmlFor="body"
+              htmlFor="message"
               className="mb-2 block text-sm font-medium text-white"
             >
               {dictionary.msg}
             </label>
             <textarea
-              id="body"
+              id="message"
               required
               className="w-full rounded-lg border border-[#33353F] bg-[#18191E]
                          p-2.5 text-sm text-gray-100 placeholder-[#9CA2A9] md:block"
@@ -100,11 +141,21 @@ const ContactSection = ({
             />
           </div>
           <button
+            id="btnSend"
             type="submit"
             className="w-full rounded-lg bg-blue-500 px-5 py-2.5 font-medium text-white hover:bg-blue-600"
           >
             {dictionary.btnSend}
           </button>
+          {successEmail && showStatus ? (
+            <p className="animate-fade mt-2 text-sm text-green-500">
+              {dictionary.successMsg}
+            </p>
+          ) : showStatus ? (
+            <p className="mt-2 text-sm text-red-400">{dictionary.errorMsg}</p>
+          ) : (
+            ''
+          )}
         </form>
       </div>
     </section>

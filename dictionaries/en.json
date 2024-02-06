@@ -76,7 +76,15 @@
 				"subject": "Job opportunity - Company name",
 				"msg": "Hi Facu! I would like to offer you to...",
 				"email": "john@yourcompany.com"
-			}
+			},
+			"successMsg": "Message sent successfully :)",
+			"errorMsg": "There was an error while sending the message, you can try to reach me on LinkedIn :)"
+		},
+		"email": {
+			"greeting": "Hi",
+			"p1": "Thanks for reaching me :)",
+			"p2": "This is a copy of your message:",
+			"p3": "Greetings!"
 		}
 	}
 }

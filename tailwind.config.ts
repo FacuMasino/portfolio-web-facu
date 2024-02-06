@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       animation: {
         blob: 'blob 7s infinite',
+        fade: 'fadeOut 5s ease-in-out forwards',
       },
       keyframes: {
         blob: {
@@ -25,6 +26,11 @@ const config: Config = {
           '100%': {
             transform: 'tranlate(0px, 0px) scale(1)',
           },
+        },
+        fadeOut: {
+          '0%': { opacity: '1' },
+          '99%': { opacity: '0' },
+          '100%': { display: 'none' },
         },
       },
       backgroundImage: {
