@@ -47,7 +47,7 @@ const ProjectsSection = ({ projects }: { projects: ProjectsLang }) => {
   };
 
   return (
-    <section>
+    <section id="projects">
       <h2 className="mb-4 mt-4 text-center text-2xl font-bold text-white md:text-4xl">
         {projects.title}
       </h2>
@@ -67,7 +67,7 @@ const ProjectsSection = ({ projects }: { projects: ProjectsLang }) => {
             key={i}
             imgSrc={prj.image}
             title={getProjectById(prj.id)?.title || ''}
-            description={getProjectById(prj.id)?.title || ''}
+            description={getProjectById(prj.id)?.description || ''}
             link={prj.link}
             github={prj.github}
           />

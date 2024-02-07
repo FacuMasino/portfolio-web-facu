@@ -1,9 +1,10 @@
+'use client';
 import React from 'react';
-import { Locale } from '@/i18n.config';
+import { Link } from 'react-scroll';
 import { getDictionary } from '@/lib/dictionary';
 import Image from 'next/image';
 
-const HeroSection = async ({
+const HeroSection = ({
   dictionary,
 }: {
   dictionary: Awaited<ReturnType<typeof getDictionary>>;
@@ -13,7 +14,7 @@ const HeroSection = async ({
   } = dictionary;
 
   return (
-    <section>
+    <section id="home">
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <div className="col-span-7 place-self-center">
           <h1 className="mb-4 text-4xl font-extrabold text-white sm:text-5xl lg:text-6xl">
@@ -26,9 +27,15 @@ const HeroSection = async ({
             {home.description}
           </p>
           <div>
-            <button className="w-full rounded-full bg-white px-6 py-3 font-bold text-black hover:bg-slate-200 sm:w-fit">
+            <Link
+              to={'contact'}
+              smooth={true}
+              duration={500}
+              offset={-76}
+              className="w-full rounded-full bg-white px-6 py-3 font-bold text-black hover:bg-slate-200 sm:w-fit"
+            >
               {home.btnContact}
-            </button>
+            </Link>
           </div>
         </div>
         <div className="col-span-5 place-self-center">

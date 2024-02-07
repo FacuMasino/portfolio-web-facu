@@ -20,3 +20,11 @@ export const disabledElements = (
     element.disabled = disable;
   });
 };
+
+export const clearForm = (elArr: HTMLFormControlsCollection) => {
+  Array.prototype.forEach.call(elArr, (element: HTMLFormElement) => {
+    if (element.tagName != 'BUTTON') {
+      element.value = '';
+    }
+  });
+};

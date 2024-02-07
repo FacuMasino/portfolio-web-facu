@@ -8,24 +8,24 @@
 	"section": {
 		"home": {
 			"title": "Hi! I'm",
-			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus cum quos laborum aliquam saepe nam.",
+			"description": "Frontend Developer / Sound Technician & Music Producer",
 			"btnContact": "Get in touch"
 		},
 		"about": {
 			"title": "About me",
-			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus cum quos laborum aliquam saepe nam. Nulla nesciunt incidunt, sunt provident tempore maxime dolorum mollitia quaerat laboriosam ab tenetur impedit? Nihil!",
+			"description": "I'm a frontend developer, sound technician and music producer, my passion about music and programming has leaded me to learn both as self-taught person and formal education. Currently I'm studying the software development career at UTN General Pacheco Regional Faculty. I love to stay up to date and keep learning about new techs and tools to improve my work.",
 			"sections": [
 				{
 					"title": "Skills",
-					"description": ["Skill 1", "Skill 2", "Skill 3"]
+					"description": ["ReactJS", "TypeScript","Styled-Components", "MySQL", "C#","Object Oriented Programming"]
 				},
 				{
 					"title": "Education",
-					"description": ["U 1", "Inst 2"]
+					"description": ["UTN - General Pacheco Regional Faculty", "TAMABA - College of music", "Coderhouse"]
 				},
 				{
 					"title": "Certifications",
-					"description": ["C 1", "Cert 2"]
+					"description": ["ReactJS Frontend Developer - Coderhouse", "PHP & MySQL - UTN.BA"]
 				}
 		]
 		},
@@ -39,38 +39,39 @@
 			"list": [
 				{
 					"id": 1,
-					"title": "React E-Commerce WebApp",
-					"description": "Description E-Commerce"
+					"title": "PediMe Fast food delivery - ReactJS",
+					"description": "Fast food delivery web developed with ReactJS"
 				},
 				{
 					"id": 2,
-					"title": "Insurance WebApp",
-					"description": "Description Insurance App"
+					"title": "Insurance Quoter - JavaScript",
+					"description": "Insurance quoter simulation developed using JavaScript, HTML and Bootstrap"
 				},
 				{
 					"id": 3,
-					"title": "Software Factory Landing Page",
-					"description": "Dscription Software Factory Landing"
+					"title": "BI Consulting - ReactJS",
+					"description": "Landing page developed with ReactJS, TypeScript and Styled-Components"
 				},
 				{
 					"id": 4,
-					"title": "Veterinary Console App - C++",
-					"description": "Description Vete++"
+					"title": "Vete++ - Management System - C++",
+					"description": "Veterinary management system developed with C++"
 				},
 				{
 					"id": 5,
 					"title": "Print Policies App - C#",
-					"description": "Description Print Insurance Policies"
+					"description": "Utility developed in C# for an insurance office"
 				}
 			]	
 		},
 		"contact": {
 			"title": "Ready to talk?",
-			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus cum quos laborum aliquam saepe nam. Nulla nesciunt incidunt",
+			"description": "I'm looking for new oportunities to put into practice my knowledge and continue learning. Don't hesitate to contact me, I'll get back to you ASAP.",
 			"name": "Name",
 			"subject": "Subject",
 			"msg": "Message",
 			"btnSend": "Send Email",
+			"sending": "Sending Email...",
 			"placeholders": {
 				"name": "John",
 				"subject": "Job opportunity - Company name",

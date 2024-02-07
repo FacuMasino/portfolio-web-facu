@@ -8,24 +8,24 @@
 	"section": {
 		"home": {
 			"title": "Hola! Soy",
-			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus cum quos laborum aliquam saepe nam.",
+			"description": "Desarrollador front-end / Técnico en sonido y producción musical",
 			"btnContact": "Contactar"
 		},
 		"about": {
 			"title": "Sobre mí",
-			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus cum quos laborum aliquam saepe nam. Nulla nesciunt incidunt, sunt provident tempore maxime dolorum mollitia quaerat laboriosam ab tenetur impedit? Nihil!",
+			"description": "Soy desarrollador front-end y técnico en sonido y producción musical. Mi pasión por la música y la programación me ha llevado a aprender tanto de manera autodidacta como a través de estudios formales. Actualmente, estoy cursando la carrera de Técnico Universitario en Programación en la UTN. Me encanta mantenerme actualizado sobre las últimas tecnologías y herramientas para mejorar constantemente en mi trabajo.",
 			"sections": [
 				{
 					"title": "Habilidades",
-					"description": ["Skill 1", "Skill 2", "Skill 3"]
+					"description": ["ReactJS", "TypeScript","Styled-Components", "MySQL", "C#","Programación Orientada a Objetos"]
 				},
 				 {
 					"title": "Educacion",
-					"description": ["U 1", "Inst 2"]
+					"description": ["UTN - Facultad Regional Gral. Pacheco", "Terciario TAMABA - Instituto de Música", "Coderhouse"]
 				},
 				{
 					"title": "Certificaciones",
-					"description": ["C 1", "Cert 2"]
+					"description": ["Desarrollador Frontend ReactJS - Coderhouse", "PHP y MySQL - UTN.BA"]
 				}
 			]
 		},
@@ -39,38 +39,39 @@
 			"list": [
 				{
 					"id":1,
-					"title": "React Tienda WebApp",
-					"description": "Descripción E-Commerce"
+					"title": "PediMe Delivery de comida - ReactJS",
+					"description": "Web de un delivery de comida desarrollada con ReactJS"
 				},
 				{
 					"id": 2,
-					"title": "Cotizador de seguros WebApp",
-					"description": "Descripción Insurance App"
+					"title": "Cotizador de seguros - JavaScript",
+					"description": "Simulador de cotizador de seguros desarrollado con JavaScript, HTML y Bootstrap"
 				},
 				{
 					"id": 3,
-					"title": "PYME Software Landing Page",
-					"description": "Descripción Software Factory Landing"
+					"title": "BI Consulting - ReactJS",
+					"description": "Landing page desarrollada con ReactJS, TypeScript y Styled-Components"
 				},
 				{
 					"id": 4,
-					"title": "Veteria App Consola - C++",
-					"description": "Descripción Vete++"
+					"title": "Vete++ - Sistema de gestión - C++",
+					"description": "Sistema de gestión veterinaria desarrollado con C++"
 				},
 				{
 					"id": 5,
 					"title": "Imprimir Pólizas App - C#",
-					"description": "Descripción App imprimir pólizas"
+					"description": "Utilidad desarrollada para una oficina de seguros"
 				}
 			]
 		},
 		"contact": {
 			"title": "Hablamos?",
-			"description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus cum quos laborum aliquam saepe nam. Nulla nesciunt incidunt",
+			"description": "Busco nuevas oportunidades para poner en práctica mis conocimientos y continuar aprendiendo, no dudes en escribirme, contestaré a la brevedad !",
 			"name": "Nombre",
 			"subject": "Asunto",
 			"msg": "Mensaje",
 			"btnSend": "Enviar Email",
+			"sending": "Enviando Email...",
 			"placeholders": {
 				"name": "Juan",
 				"subject": "Oportunidad laboral - Nombre empresa",

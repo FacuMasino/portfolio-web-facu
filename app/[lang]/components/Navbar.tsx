@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import Link from 'next/link';
+import { Link } from 'react-scroll';
 import { NavLink } from './NavLink';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import MobileMenu from './MobileMenu';
@@ -14,19 +14,19 @@ type NavLink = {
 const navLinks: NavLink[] = [
   {
     titleKey: 'home', // nombre de la clave en diccionario
-    path: '#home',
+    path: 'home',
   },
   {
     titleKey: 'about',
-    path: '#about',
+    path: 'about',
   },
   {
     titleKey: 'projects',
-    path: '#projects',
+    path: 'projects',
   },
   {
     titleKey: 'contact',
-    path: '#contact',
+    path: 'contact',
   },
 ];
 
@@ -45,8 +45,11 @@ export const Navbar = ({
     <nav className="fixed left-0 right-0 top-0 z-10 bg-[#121212]">
       <div className="container mx-auto flex flex-wrap items-center justify-between p-4">
         <Link
-          href={'/'}
-          className="text-2xl font-semibold text-white md:text-3xl"
+          to={'home'}
+          smooth={true}
+          duration={500}
+          offset={-76}
+          className="cursor-pointer text-2xl font-semibold text-white md:text-3xl"
         >
           {'<FM/>'}
         </Link>

@@ -1,9 +1,9 @@
-"use client";
-import React, { useState, useTransition } from "react";
-import { Locale } from "@/i18n.config";
-import { getDictionary } from "@/lib/dictionary";
-import Image from "next/image";
-import TabButton from "./TabButton";
+'use client';
+import React, { useState, useTransition } from 'react';
+import { Locale } from '@/i18n.config';
+import { getDictionary } from '@/lib/dictionary';
+import Image from 'next/image';
+import TabButton from './TabButton';
 
 type AboutSections = {
   title: string;
@@ -26,8 +26,8 @@ const AboutSection = ({ about }: { about: AboutLang }) => {
     });
   };
   return (
-    <section>
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16">
+    <section id="about">
+      <div className="items-center gap-8 px-4 py-8 sm:py-16 md:grid md:grid-cols-2 xl:gap-16">
         <Image
           className="rounded"
           src="/images/aboutimg.jpeg"
@@ -35,10 +35,10 @@ const AboutSection = ({ about }: { about: AboutLang }) => {
           width={500}
           height={500}
         />
-        <div className="mt-8 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-2xl md:text-3xl font-bold pb-4">{about.title}</h2>
+        <div className="mt-8 flex h-full flex-col text-left md:mt-0">
+          <h2 className="pb-4 text-2xl font-bold md:text-3xl">{about.title}</h2>
           <p className="text-base lg:text-lg">{about.description}</p>
-          <div className="flex flex-row md:gap-0 gap-2 md:flex-nowrap flex-wrap mt-8 justify-start">
+          <div className="mt-8 flex flex-row flex-wrap justify-start gap-2 md:flex-nowrap md:gap-0">
             {about.sections.map((val, i) => (
               <TabButton
                 key={i}
@@ -50,7 +50,7 @@ const AboutSection = ({ about }: { about: AboutLang }) => {
             ))}
           </div>
           <div className="mt-8">
-            <ul className="list-disc list-inside">
+            <ul className="list-inside list-disc">
               {about.sections[tab].description.map((val, i) => (
                 <li key={i}>{val}</li>
               ))}

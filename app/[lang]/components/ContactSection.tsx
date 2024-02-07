@@ -6,7 +6,7 @@ import Link from 'next/link';
 import githubIcon from '@/public/github.svg';
 import linkedinIcon from '@/public/linkedin.svg';
 import { socialLinks } from '@/app/assets';
-import { disabledElements, sendEmail } from '@/app/utils/helpers';
+import { clearForm, disabledElements, sendEmail } from '@/app/utils/helpers';
 import { Locale } from '@/i18n.config';
 
 interface FormElements extends HTMLFormControlsCollection {
@@ -29,10 +29,15 @@ const ContactSection = ({
   currentLang: Locale;
 }) => {
   const [successEmail, setSuccessEmail] = useState(false);
+  // Estado que controla si se muestra o no el mensaje de exito
   const [showStatus, setShowStatus] = useState(false);
+  const [isSending, setIsSending] = useState(false);
 
   const handleSubmit = async (e: FormEvent<EmailForm>) => {
     e.preventDefault();
+    // Si se habia mostrado el mensaje de estado, se vuelve a ocultar
+    setShowStatus(false);
+    setIsSending(true);
     const form = e.currentTarget.elements;
     disabledElements(form, true);
     // crear objeto con los datos
@@ -50,10 +55,15 @@ const ContactSection = ({
     setSuccessEmail(success);
     setShowStatus(true);
     disabledElements(form, false);
+    if (success) clearForm(form); // limpiar campos
+    setIsSending(false);
   };
 
   return (
-    <section className="my-4 grid gap-4 py-12 md:my-12 md:grid-cols-2 md:py-24">
+    <section
+      className="my-4 grid gap-4 py-12 md:my-12 md:grid-cols-2 md:py-24"
+      id="contact"
+    >
       <div className="relative">
         <div className="absolute -bottom-20 -left-[20%] hidden h-72 w-72 animate-blob rounded-full bg-blue-600 opacity-30 blur-xl filter md:block "></div>
         <div className="relative">
@@ -64,10 +74,18 @@ const ContactSection = ({
             {dictionary.description}
           </p>
           <div className="flex flex-row gap-2">
-            <Link href={socialLinks.github} target="_blank">
+            <Link
+              href={socialLinks.github}
+              target="_blank"
+              className="transition delay-100 duration-200 ease-in-out hover:scale-105"
+            >
               <Image alt="GitHub" src={githubIcon} width={32} height={32} />
             </Link>
-            <Link href={socialLinks.linkedin} target="_blank">
+            <Link
+              href={socialLinks.linkedin}
+              target="_blank"
+              className="transition delay-100 duration-200 ease-in-out hover:scale-105"
+            >
               <Image alt="LinkedIn" src={linkedinIcon} width={32} height={32} />
             </Link>
           </div>
@@ -145,10 +163,10 @@ const ContactSection = ({
             type="submit"
             className="w-full rounded-lg bg-blue-500 px-5 py-2.5 font-medium text-white hover:bg-blue-600"
           >
-            {dictionary.btnSend}
+            {isSending ? dictionary.sending : dictionary.btnSend}
           </button>
           {successEmail && showStatus ? (
-            <p className="animate-fade mt-2 text-sm text-green-500">
+            <p className="animate-fadeOut mt-2 text-sm text-green-500">
               {dictionary.successMsg}
             </p>
           ) : showStatus ? (
