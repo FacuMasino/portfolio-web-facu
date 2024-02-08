@@ -166,7 +166,7 @@ const ContactSection = ({
             {isSending ? dictionary.sending : dictionary.btnSend}
           </button>
           {successEmail && showStatus ? (
-            <p className="animate-fadeOut mt-2 text-sm text-green-500">
+            <p className="mt-2 animate-fadeOut text-sm text-green-500">
               {dictionary.successMsg}
             </p>
           ) : showStatus ? (

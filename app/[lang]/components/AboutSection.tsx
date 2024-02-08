@@ -27,7 +27,7 @@ const AboutSection = ({ about }: { about: AboutLang }) => {
   };
   return (
     <section id="about">
-      <div className="items-center gap-8 px-4 py-8 sm:py-16 md:grid md:grid-cols-2 xl:gap-16">
+      <div className="items-center gap-8 px-4 py-8 text-white sm:py-16 md:grid md:grid-cols-2 xl:gap-16">
         <Image
           className="rounded"
           src="/images/aboutimg.jpeg"
