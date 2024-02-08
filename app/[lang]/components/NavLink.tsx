@@ -5,9 +5,11 @@ import { Link } from 'react-scroll';
 export const NavLink = ({
   href,
   children,
+  onClickFn,
 }: {
   href: string;
   children: React.ReactNode;
+  onClickFn?: () => void;
 }) => {
   return (
     <Link
@@ -16,6 +18,7 @@ export const NavLink = ({
       smooth={true}
       duration={500}
       offset={-76}
+      onClick={onClickFn}
     >
       {children}
     </Link>

@@ -38,6 +38,7 @@ export const Navbar = ({
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
   const handleNavbarClick = () => {
+    console.log(isNavbarOpen);
     setIsNavbarOpen(!isNavbarOpen);
   };
 
@@ -75,7 +76,11 @@ export const Navbar = ({
         </div>
       </div>
       {isNavbarOpen ? (
-        <MobileMenu menuTitles={menuTitles} links={navLinks} />
+        <MobileMenu
+          menuTitles={menuTitles}
+          links={navLinks}
+          onClickFn={handleNavbarClick}
+        />
       ) : null}
     </nav>
   );
