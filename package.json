@@ -11,6 +11,7 @@
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.5.2",
     "@heroicons/react": "^2.1.1",
+    "@next/third-parties": "^14.1.0",
     "@react-email/components": "0.0.14",
     "@types/negotiator": "^0.6.3",
     "i18next": "^23.7.11",

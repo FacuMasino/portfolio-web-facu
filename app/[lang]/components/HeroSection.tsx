@@ -45,6 +45,7 @@ const HeroSection = ({
               alt="hero image"
               width={300}
               height={300}
+              priority
             />
           </div>
         </div>
