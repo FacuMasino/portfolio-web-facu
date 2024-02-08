@@ -9,11 +9,13 @@ import Negotiator from 'negotiator';
 function getLocale(request: NextRequest): string | undefined {
   const negotiatorHeaders: Record<string, string> = {};
   request.headers.forEach((value, key) => (negotiatorHeaders[key] = value));
-
   // @ts-ignore locales are readonly
   const locales: string[] = i18n.locales;
+  // Evita error 500 con los crawlers
+  if(negotiatorHeaders['accept-language'] == undefined) {
+    negotiatorHeaders['accept-language'] = 'es-ES,es;q=0.9';
+  }
   const languages = new Negotiator({ headers: negotiatorHeaders }).languages();
-
   const locale = matchLocale(languages, locales, i18n.defaultLocale);
   return locale;
 }
@@ -23,7 +25,6 @@ export function middleware(request: NextRequest) {
   const pathnameIsMissingLocale = i18n.locales.every(
     (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
   );
-
   // Redirect if there is no locale
   if (pathnameIsMissingLocale) {
     const locale = getLocale(request);
