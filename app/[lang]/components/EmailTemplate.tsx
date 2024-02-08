@@ -27,6 +27,7 @@ export const EmailTemplate = async ({
     <Html>
       <Preview>{firstName + ' ' + dictionary.p2}</Preview>
       <Tailwind>
+        <head></head>
         <Head />
         <Body className="mx-auto my-auto w-[450px] bg-white font-sans">
           <Container className="mx-auto max-w-4xl rounded-3xl bg-[#131313] shadow-xl">
