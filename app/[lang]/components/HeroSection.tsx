@@ -26,7 +26,7 @@ const HeroSection = ({
           <p className="mb-6 text-base text-[#c2c2c2] sm:text-lg lg:text-xl">
             {home.description}
           </p>
-          <div>
+          <div className="mb-4 mt-4 py-4">
             <Link
               to={'contact'}
               smooth={true}
