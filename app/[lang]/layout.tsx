@@ -10,6 +10,8 @@ export const metadata: Metadata = {
   title: 'Facundo Masino - Desarrollador Frontend',
   description:
     'Desarrolador Frontend, apasionado por la música y la programación. Actualmente estudiando la carrera Técnico Universitario en Programación en la UTN FRGP.',
+  keywords:
+    'Facundo Masino, Desarrollador, Desarrolador Web, Frontend developer, Web Developer, Remote Web Dev, Desarrollador Web Argentina, Remote Work, Trabajo remoto',
 };
 
 export async function generateStaticParams() {
