@@ -30,7 +30,7 @@ const AboutSection = ({ about }: { about: AboutLang }) => {
       <div className="items-center gap-8 px-4 py-8 text-white sm:py-16 md:grid md:grid-cols-2 xl:gap-16">
         <Image
           className="rounded"
-          src="/images/aboutimg.webp"
+          src="/images/aboutimg.jpeg"
           alt="hero image"
           width={500}
           height={500}

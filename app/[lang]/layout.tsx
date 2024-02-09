@@ -25,6 +25,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang={params.lang}>
+      <head>
+        <link rel="preconnect" href="https://analytics.google.com" />
+      </head>
       <body className={inter.className}>{children}</body>
       <GoogleAnalytics gaId="G-5Q3ZDL0G1Y" />
     </html>
