@@ -4,6 +4,7 @@ import { Locale } from '@/i18n.config';
 import { getDictionary } from '@/lib/dictionary';
 import Image from 'next/image';
 import TabButton from './TabButton';
+import { imageKitLoader } from '@/app/utils/helpers';
 
 type AboutSections = {
   title: string;
@@ -29,11 +30,13 @@ const AboutSection = ({ about }: { about: AboutLang }) => {
     <section id="about">
       <div className="items-center gap-8 px-4 py-8 text-white sm:py-16 md:grid md:grid-cols-2 xl:gap-16">
         <Image
+          loader={imageKitLoader}
           className="rounded"
-          src="/images/aboutimg.jpeg"
+          src="aboutimg.jpg"
           alt="hero image"
           width={500}
           height={500}
+          quality={50}
           priority
         />
         <div className="mt-8 flex h-full flex-col text-left md:mt-0">
