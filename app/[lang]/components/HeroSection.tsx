@@ -29,6 +29,7 @@ const HeroSection = ({
           <div className="mb-4 mt-4 py-4">
             <Link
               to={'contact'}
+              href={'#contact'}
               smooth={true}
               duration={500}
               offset={-76}

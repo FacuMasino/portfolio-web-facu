@@ -14,6 +14,7 @@ export const NavLink = ({
   return (
     <Link
       to={href}
+      href={`#${href}`}
       className="block cursor-pointer py-2 pl-3 pr-3 text-[#c2c2c2] hover:text-white sm:text-xl"
       smooth={true}
       duration={500}

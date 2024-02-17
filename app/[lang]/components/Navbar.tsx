@@ -47,6 +47,7 @@ export const Navbar = ({
       <div className="container mx-auto flex flex-wrap items-center justify-between p-4">
         <Link
           to={'home'}
+          href='#home'
           smooth={true}
           duration={500}
           offset={-76}

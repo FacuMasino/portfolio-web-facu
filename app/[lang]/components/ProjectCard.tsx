@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { CodeBracketIcon, EyeIcon } from '@heroicons/react/24/outline';
+import Image from 'next/image';
 
 const ProjectCard = ({
   imgSrc,
@@ -19,10 +20,8 @@ const ProjectCard = ({
     <div>
       <div
         className="group relative h-52 rounded-t-xl md:h-72"
-        style={{
-          background: `center / cover url(${imgSrc})`,
-        }}
       >
+        <Image fill className='absolute left-0 top-0 rounded-t-xl' src={imgSrc} style={{backgroundPosition: 'center', objectFit: 'cover'}} alt={`${title} preview`}/>
         <div
           className="overlay invisible absolute left-0 top-0 flex h-full 
                   w-full items-center justify-center gap-2 bg-[#1d1d1d]
