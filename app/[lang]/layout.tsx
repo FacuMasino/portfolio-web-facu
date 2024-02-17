@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { GoogleAnalytics } from '@next/third-parties/google';
+import { Analytics } from '@vercel/analytics/react';
 const inter = Inter({ subsets: ['latin'] });
 
 import { Locale, i18n } from '@/i18n.config';
@@ -32,6 +33,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>{children}</body>
       <GoogleAnalytics gaId="G-5Q3ZDL0G1Y" />
+      <Analytics />
     </html>
   );
 }

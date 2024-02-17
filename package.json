@@ -14,6 +14,7 @@
     "@next/third-parties": "^14.1.0",
     "@react-email/components": "0.0.14",
     "@types/negotiator": "^0.6.3",
+    "@vercel/analytics": "^1.2.0",
     "i18next": "^23.7.11",
     "negotiator": "^0.6.3",
     "next": "14.0.4",

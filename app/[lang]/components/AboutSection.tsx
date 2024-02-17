@@ -32,12 +32,12 @@ const AboutSection = ({ about }: { about: AboutLang }) => {
         <Image
           loader={imageKitLoader}
           className="rounded"
-          src="aboutimg.jpg"
+          src="aboutimg.jpg?updatedAt=1708120599646"
           alt="hero image"
           width={500}
           height={500}
           quality={50}
-          priority
+          loading={'eager'}
         />
         <div className="mt-8 flex h-full flex-col text-left md:mt-0">
           <h2 className="pb-4 text-2xl font-bold md:text-3xl">{about.title}</h2>

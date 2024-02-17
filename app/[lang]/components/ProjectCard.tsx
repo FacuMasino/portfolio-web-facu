@@ -44,7 +44,7 @@ const ProjectCard = ({
         </div>
       </div>
       <div className="rounded-b-xl bg-[#1d1d1d] px-4 py-6 text-white">
-        <h5 className="mb-2 text-xl font-semibold">{title}</h5>
+        <h3 className="mb-2 text-xl font-semibold">{title}</h3>
         <p className="text-[#c2c2c2]">{description}</p>
       </div>
     </div>
