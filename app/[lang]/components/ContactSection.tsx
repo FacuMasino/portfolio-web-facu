@@ -67,9 +67,9 @@ const ContactSection = ({
       <div className="relative">
         <div className="absolute -bottom-20 -left-[20%] hidden h-72 w-72 animate-blob rounded-full bg-blue-600 opacity-30 blur-xl filter md:block "></div>
         <div className="relative">
-          <h5 className="my-2 text-xl font-semibold text-white">
+          <h3 className="my-2 text-xl font-semibold text-white">
             {dictionary.title}
-          </h5>
+          </h3>
           <p className="mb-4 max-w-md text-[#c2c2c2]">
             {dictionary.description}
           </p>

@@ -57,7 +57,7 @@ export const Navbar = ({
         </Link>
         <div className="mobile-menu block md:hidden">
           {!isNavbarOpen ? (
-            <button onClick={handleNavbarClick}>
+            <button name='menu' onClick={handleNavbarClick}>
               <Bars3Icon className="h-5 w-5" />
             </button>
           ) : (
