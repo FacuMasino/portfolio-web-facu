@@ -3,6 +3,7 @@ const img2 = '/images/projects/2.png';
 const img3 = '/images/projects/3.png';
 const img4 = '/images/projects/4.png';
 const img5 = '/images/projects/5.png';
+const img6 = '/images/projects/6.png';
 
 export type TagsType = 'all' | 'web' | 'desktop';
 export type ProjectsDataType = {
@@ -48,6 +49,14 @@ export const ProjectsData: ProjectsDataType = [
     tags: ['all', 'desktop'],
     link: 'https://github.com/FacuMasino/imprimir-polizas-utility',
     github: 'https://github.com/FacuMasino/imprimir-polizas-utility',
+  },
+  {
+    id: 6,
+    image: img6,
+    tags: ['all', 'web'],
+    link: 'https://comparatasas.ar',
+    github:
+      'https://github.com/ferminrp/compara-tasas/commits?author=FacuMasino',
   },
 ];
 

@@ -30,7 +30,7 @@
 			]
 		},
 		"projects": {
-			"title": "Mis Proyectos",
+			"title": "Proyectos",
 			"tagNames": {
 				"all": "Todos",
 				"web": "Web",
@@ -61,6 +61,11 @@
 					"id": 5,
 					"title": "Imprimir Pólizas App - C#",
 					"description": "Utilidad desarrollada para una oficina de seguros"
+				},
+				{
+					"id": 6,
+					"title": "Comparatasas.ar - [Colaborador]",
+					"description": "Comparador de tasas y rendimientos de fondos en Argentina"
 				}
 			]
 		},

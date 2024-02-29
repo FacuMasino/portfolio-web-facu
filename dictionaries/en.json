@@ -30,7 +30,7 @@
 		]
 		},
 		"projects": {
-			"title": "My Projects",
+			"title": "Projects",
 			"tagNames": {
 				"all": "All",
 				"web": "Web",
@@ -61,6 +61,11 @@
 					"id": 5,
 					"title": "Print Policies App - C#",
 					"description": "Utility developed in C# for an insurance office"
+				},
+				{
+					"id": 6,
+					"title": "Comparatasas.ar - [Contributor]",
+					"description": "Fees and returns comparator for Argentina's funds"
 				}
 			]	
 		},
