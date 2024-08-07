@@ -66,6 +66,11 @@
 					"id": 6,
 					"title": "Comparatasas.ar - [Contributor]",
 					"description": "Fees and returns comparator for Argentina's funds"
+				},
+				{
+					"id": 7,
+					"title": "Ecommerce-NET - C# ASP.NET",
+					"description": "Ecommerce developed with ASP.NET and C# that includes product management, shopping cart, user accounts, and order management."
 				}
 			]	
 		},

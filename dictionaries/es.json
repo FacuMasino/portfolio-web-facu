@@ -66,6 +66,11 @@
 					"id": 6,
 					"title": "Comparatasas.ar - [Colaborador]",
 					"description": "Comparador de tasas y rendimientos de fondos en Argentina"
+				},
+				{
+					"id": 7,
+					"title": "Ecommerce-NET - C# ASP.NET",
+					"description": "Ecommerce desarrollado con ASP.NET y C# que incluye gestión de productos, carrito, cuentas de usuario, gestión de pedidos."
 				}
 			]
 		},
