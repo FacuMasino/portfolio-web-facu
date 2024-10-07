@@ -58,6 +58,13 @@ export const ProjectsData: ProjectsDataType = [
     link: 'https://github.com/FacuMasino/ecommerce-net',
     github: 'https://github.com/FacuMasino/ecommerce-net',
   },
+  {
+    id: 8,
+    image: '/images/projects/8.png',
+    tags: ['all', 'web'],
+    link: 'https://filadelfialaguna.com.ar/',
+    github: 'https://github.com/FacuMasino/filadelfia-laguna-web',
+  },
 ];
 
 export const socialLinks = {

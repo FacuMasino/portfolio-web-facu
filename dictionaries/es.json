@@ -71,6 +71,11 @@
 					"id": 7,
 					"title": "Ecommerce-NET - C# ASP.NET",
 					"description": "Ecommerce desarrollado con ASP.NET y C# que incluye gestión de productos, carrito, cuentas de usuario, gestión de pedidos."
+				},
+				{
+					"id": 8,
+					"title": "Web Filadelfia Laguna - NextJS, Tailwind",
+					"description": "Página web desarrollada con NextJS + Tailwind para una Iglesia Cristiana"
 				}
 			]
 		},
