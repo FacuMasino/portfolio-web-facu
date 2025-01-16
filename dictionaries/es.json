@@ -8,12 +8,12 @@
 	"section": {
 		"home": {
 			"title": "Hola! Soy",
-			"description": "Desarrollador front-end / Técnico en sonido y producción musical",
+			"description": "Desarrollador de Software / Técnico en sonido y producción musical",
 			"btnContact": "Contactar"
 		},
 		"about": {
 			"title": "Sobre mí",
-			"description": "Soy desarrollador front-end y técnico en sonido y producción musical. Mi pasión por la música y la programación me ha llevado a aprender tanto de manera autodidacta como a través de estudios formales. Actualmente, estoy cursando la carrera de Técnico Universitario en Programación en la UTN. Me encanta mantenerme actualizado sobre las últimas tecnologías y herramientas para mejorar constantemente en mi trabajo.",
+			"description": "Soy desarrollador de software, técnico en sonido y producción musical. Mi pasión por la música y la programación me ha llevado a aprender tanto de manera autodidacta como a través de estudios formales. Estudié Técnico Universitario en Programación en la UTN FRGP. Me encanta mantenerme actualizado sobre las últimas tecnologías y herramientas para mejorar constantemente en mi trabajo.",
 			"sections": [
 				{
 					"title": "Habilidades",
@@ -76,6 +76,11 @@
 					"id": 8,
 					"title": "Web Filadelfia Laguna - NextJS, Tailwind",
 					"description": "Página web desarrollada con NextJS + Tailwind para una Iglesia Cristiana"
+				},
+				{
+					"id": 9,
+					"title": "BancAr - Gestión Bancaria - JAVA, MySQL, JSP, TailwindCSS",
+					"description": "Proyecto final de Lab. de Computación IV. Sistema de gestión bancaria desarrollado para administrar las operaciones de una entidad bancaria."
 				}
 			]
 		},

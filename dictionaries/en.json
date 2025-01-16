@@ -8,12 +8,12 @@
 	"section": {
 		"home": {
 			"title": "Hi! I'm",
-			"description": "Frontend Developer / Sound Technician & Music Producer",
+			"description": "Software Developer / Sound Technician & Music Producer",
 			"btnContact": "Get in touch"
 		},
 		"about": {
 			"title": "About me",
-			"description": "I'm a frontend developer, sound technician and music producer, my passion about music and programming has leaded me to learn both as self-taught person and formal education. Currently I'm studying the software development career at UTN General Pacheco Regional Faculty. I love to stay up to date and keep learning about new techs and tools to improve my work.",
+			"description": "I'm a software developer, sound technician and music producer, my passion about music and programming has leaded me to learn both as self-taught person and formal education. I've studied the software development career at UTN General Pacheco Regional Faculty. I love to stay up to date and keep learning about new techs and tools to improve my work.",
 			"sections": [
 				{
 					"title": "Skills",
@@ -76,6 +76,11 @@
 					"id": 8,
 					"title": "Web Filadelfia Laguna - NextJS, Tailwind",
 					"description": "Web page developed with NextJS + Tailwind for a Christian Church"
+				},
+				{
+					"id": 9,
+					"title": "BancAr - Bank Management - JAVA, MySQL, JSP, TailwindCSS",
+					"description": "Final project for Computer Lab IV. Bank management system developed to manage the operations of a banking entity."
 				}
 			]	
 		},

@@ -65,6 +65,13 @@ export const ProjectsData: ProjectsDataType = [
     link: 'https://filadelfialaguna.com.ar/',
     github: 'https://github.com/FacuMasino/filadelfia-laguna-web',
   },
+  {
+    id: 9,
+    image: '/images/projects/9.png',
+    tags: ['all', 'web'],
+    link: 'https://youtu.be/D8P1URMdCHU',
+    github: 'https://github.com/FacuMasino/bancar',
+  },
 ];
 
 export const socialLinks = {
