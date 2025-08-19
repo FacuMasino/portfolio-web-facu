@@ -4,7 +4,8 @@ export type ProjectsDataType = {
   image: string;
   tags: TagsType[];
   link: string;
-  github: string;
+  github: string | null;
+  date: Date;
 }[];
 
 export const ProjectsData: ProjectsDataType = [
@@ -14,6 +15,7 @@ export const ProjectsData: ProjectsDataType = [
     tags: ['all', 'web'],
     link: 'https://pedime.netlify.app/',
     github: 'https://github.com/FacuMasino/pedime-reactjs-masino',
+    date: new Date('2022-05-01'),
   },
   {
     id: 2,
@@ -21,6 +23,7 @@ export const ProjectsData: ProjectsDataType = [
     tags: ['all', 'web'],
     link: 'https://facumasino.github.io/CotizadorSeguro-JS-Masino/',
     github: 'https://github.com/FacuMasino/CotizadorSeguro-JS-Masino',
+    date: new Date('2022-04-01'),
   },
   {
     id: 3,
@@ -28,6 +31,7 @@ export const ProjectsData: ProjectsDataType = [
     tags: ['all', 'web'],
     link: 'https://bi-consulting-web-testing.vercel.app/',
     github: 'https://github.com/FacuMasino/bi-consulting-web',
+    date: new Date('2022-11-01'),
   },
   {
     id: 4,
@@ -35,6 +39,7 @@ export const ProjectsData: ProjectsDataType = [
     tags: ['all', 'desktop'],
     link: 'https://github.com/FacuMasino/tp-integrador-grupo-10-lab2',
     github: 'https://github.com/FacuMasino/tp-integrador-grupo-10-lab2',
+    date: new Date('2023-10-01'),
   },
   {
     id: 5,
@@ -42,6 +47,7 @@ export const ProjectsData: ProjectsDataType = [
     tags: ['all', 'desktop'],
     link: 'https://github.com/FacuMasino/imprimir-polizas-utility',
     github: 'https://github.com/FacuMasino/imprimir-polizas-utility',
+    date: new Date('2024-08-01'),
   },
   {
     id: 6,
@@ -50,6 +56,7 @@ export const ProjectsData: ProjectsDataType = [
     link: 'https://comparatasas.ar',
     github:
       'https://github.com/ferminrp/compara-tasas/commits?author=FacuMasino',
+    date: new Date('2024-02-01'),
   },
   {
     id: 7,
@@ -57,6 +64,7 @@ export const ProjectsData: ProjectsDataType = [
     tags: ['all', 'web'],
     link: 'https://github.com/FacuMasino/ecommerce-net',
     github: 'https://github.com/FacuMasino/ecommerce-net',
+    date: new Date('2024-05-01'),
   },
   {
     id: 8,
@@ -64,6 +72,7 @@ export const ProjectsData: ProjectsDataType = [
     tags: ['all', 'web'],
     link: 'https://filadelfialaguna.com.ar/',
     github: 'https://github.com/FacuMasino/filadelfia-laguna-web',
+    date: new Date('2024-03-01'),
   },
   {
     id: 9,
@@ -71,6 +80,15 @@ export const ProjectsData: ProjectsDataType = [
     tags: ['all', 'web'],
     link: 'https://youtu.be/D8P1URMdCHU',
     github: 'https://github.com/FacuMasino/bancar',
+    date: new Date('2024-10-01'),
+  },
+  {
+    id: 10,
+    image: '/images/projects/10.png',
+    tags: ['all', 'web'],
+    link: 'https://coopersive.bi.com.ar/login/?c=EMPG-ZJU4-DGZJ',
+    github: null,
+    date: new Date('2025-01-01'),
   },
 ];
 

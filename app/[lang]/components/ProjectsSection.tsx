@@ -18,6 +18,11 @@ type ProjectsLang = {
   title: string;
   tagNames: TagNamesType;
   list: ProjectsList[];
+  buttons: {
+    view: string;
+    code: string;
+    private: string;
+  };
 };
 
 type TagKeys = { tagName: TagsType }[];
@@ -41,7 +46,9 @@ const ProjectsSection = ({ projects }: { projects: ProjectsLang }) => {
     setTag(newTag);
   };
 
-  const filteredList = ProjectsData.filter((proj) => proj.tags.includes(tag));
+  const filteredList = ProjectsData.filter((proj) =>
+    proj.tags.includes(tag)
+  ).toSorted((a, b) => b.date.getTime() - a.date.getTime());
   const getProjectById = (id: number): ProjectsList | undefined => {
     return projects.list.find((prjId) => prjId.id == id);
   };
@@ -69,7 +76,8 @@ const ProjectsSection = ({ projects }: { projects: ProjectsLang }) => {
             title={getProjectById(prj.id)?.title || ''}
             description={getProjectById(prj.id)?.description || ''}
             link={prj.link}
-            github={prj.github}
+            github={prj.github || ''}
+            buttons={projects.buttons}
           />
         ))}
       </div>

@@ -1,111 +1,135 @@
 {
-	"menu": {
-		"home": "Inicio",
-		"about": "Sobre mí",
-		"projects": "Proyectos",
-		"contact": "Contacto"
-	},
-	"section": {
-		"home": {
-			"title": "Hola! Soy",
-			"description": "Desarrollador de Software / Técnico en sonido y producción musical",
-			"btnContact": "Contactar"
-		},
-		"about": {
-			"title": "Sobre mí",
-			"description": "Soy desarrollador de software, técnico en sonido y producción musical. Mi pasión por la música y la programación me ha llevado a aprender tanto de manera autodidacta como a través de estudios formales. Estudié Técnico Universitario en Programación en la UTN FRGP. Me encanta mantenerme actualizado sobre las últimas tecnologías y herramientas para mejorar constantemente en mi trabajo.",
-			"sections": [
-				{
-					"title": "Habilidades",
-					"description": ["ReactJS", "TypeScript","Styled-Components", "MySQL", "C#","Programación Orientada a Objetos"]
-				},
-				 {
-					"title": "Educacion",
-					"description": ["UTN - Facultad Regional Gral. Pacheco", "Terciario TAMABA - Instituto de Música", "Coderhouse"]
-				},
-				{
-					"title": "Certificaciones",
-					"description": ["Desarrollador Frontend ReactJS - Coderhouse", "PHP y MySQL - UTN.BA"]
-				}
-			]
-		},
-		"projects": {
-			"title": "Proyectos",
-			"tagNames": {
-				"all": "Todos",
-				"web": "Web",
-				"desktop": "Escritorio"
-			},
-			"list": [
-				{
-					"id":1,
-					"title": "PediMe Delivery de comida - ReactJS",
-					"description": "Web de un delivery de comida desarrollada con ReactJS"
-				},
-				{
-					"id": 2,
-					"title": "Cotizador de seguros - JavaScript",
-					"description": "Simulador de cotizador de seguros desarrollado con JavaScript, HTML y Bootstrap"
-				},
-				{
-					"id": 3,
-					"title": "BI Consulting - ReactJS",
-					"description": "Landing page desarrollada con ReactJS, TypeScript y Styled-Components"
-				},
-				{
-					"id": 4,
-					"title": "Vete++ - Sistema de gestión - C++",
-					"description": "Sistema de gestión veterinaria desarrollado con C++"
-				},
-				{
-					"id": 5,
-					"title": "Imprimir Pólizas App - C#",
-					"description": "Utilidad desarrollada para una oficina de seguros"
-				},
-				{
-					"id": 6,
-					"title": "Comparatasas.ar - [Colaborador]",
-					"description": "Comparador de tasas y rendimientos de fondos en Argentina"
-				},
-				{
-					"id": 7,
-					"title": "Ecommerce-NET - C# ASP.NET",
-					"description": "Ecommerce desarrollado con ASP.NET y C# que incluye gestión de productos, carrito, cuentas de usuario, gestión de pedidos."
-				},
-				{
-					"id": 8,
-					"title": "Web Filadelfia Laguna - NextJS, Tailwind",
-					"description": "Página web desarrollada con NextJS + Tailwind para una Iglesia Cristiana"
-				},
-				{
-					"id": 9,
-					"title": "BancAr - Gestión Bancaria - JAVA, MySQL, JSP, TailwindCSS",
-					"description": "Proyecto final de Lab. de Computación IV. Sistema de gestión bancaria desarrollado para administrar las operaciones de una entidad bancaria."
-				}
-			]
-		},
-		"contact": {
-			"title": "Hablamos?",
-			"description": "Busco nuevas oportunidades para poner en práctica mis conocimientos y continuar aprendiendo, no dudes en escribirme, contestaré a la brevedad !",
-			"name": "Nombre",
-			"subject": "Asunto",
-			"msg": "Mensaje",
-			"btnSend": "Enviar Email",
-			"sending": "Enviando Email...",
-			"placeholders": {
-				"name": "Juan",
-				"subject": "Oportunidad laboral - Nombre empresa",
-				"msg": "Hola Facu! Me gustaría ofrecerte...",
-				"email": "juan@empresa.com"
-			},
-			"successMsg": "Mensaje enviado con éxito :)",
-			"errorMsg": "Ocurrió un error al enviar el mensaje, puedes intentar contactarme en LinkedIn :)"
-		},
-		"email": {
-			"greeting": "Hola",
-			"p1": "Gracias por contactarte :)",
-			"p2": "Esta es una copia de tu mensaje:",
-			"p3": "Saludos!"
-		}
-	}
+  "menu": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "section": {
+    "home": {
+      "title": "Hola! Soy",
+      "description": "Desarrollador de Software / Técnico en sonido y producción musical",
+      "btnContact": "Contactar"
+    },
+    "about": {
+      "title": "Sobre mí",
+      "description": "Soy desarrollador de software, técnico en sonido y producción musical. Mi pasión por la música y la programación me ha llevado a aprender tanto de manera autodidacta como a través de estudios formales. Estudié Técnico Universitario en Programación en la UTN FRGP. Me encanta mantenerme actualizado sobre las últimas tecnologías y herramientas para mejorar constantemente en mi trabajo.",
+      "sections": [
+        {
+          "title": "Habilidades",
+          "description": [
+            "C# .NET, ASP.NET",
+            "MySQL, SQL Server + Entity Framework",
+            "ReactJS",
+            "TypeScript",
+            "TailwindCSS,Styled-Components",
+            "Programación Orientada a Objetos"
+          ]
+        },
+        {
+          "title": "Educacion",
+          "description": [
+            "UTN - Facultad Regional Gral. Pacheco",
+            "Terciario TAMABA - Instituto de Música",
+            "Coderhouse"
+          ]
+        },
+        {
+          "title": "Certificaciones",
+          "description": [
+            "Desarrollador Frontend ReactJS - Coderhouse",
+            "PHP y MySQL - UTN.BA"
+          ]
+        }
+      ]
+    },
+    "projects": {
+      "title": "Proyectos",
+      "buttons": {
+        "view": "Ver proyecto",
+        "code": "Ver código",
+        "private": "Repositorio privado"
+      },
+      "tagNames": {
+        "all": "Todos",
+        "web": "Web",
+        "desktop": "Escritorio"
+      },
+      "list": [
+        {
+          "id": 1,
+          "title": "PediMe Delivery de comida - ReactJS",
+          "description": "Web de un delivery de comida desarrollada con ReactJS"
+        },
+        {
+          "id": 2,
+          "title": "Cotizador de seguros - JavaScript",
+          "description": "Simulador de cotizador de seguros desarrollado con JavaScript, HTML y Bootstrap"
+        },
+        {
+          "id": 3,
+          "title": "BI Consulting - ReactJS",
+          "description": "Landing page desarrollada con ReactJS, TypeScript y Styled-Components"
+        },
+        {
+          "id": 4,
+          "title": "Vete++ - Sistema de gestión - C++",
+          "description": "Sistema de gestión veterinaria desarrollado con C++"
+        },
+        {
+          "id": 5,
+          "title": "Imprimir Pólizas App - C#",
+          "description": "Utilidad desarrollada para una oficina de seguros"
+        },
+        {
+          "id": 6,
+          "title": "Comparatasas.ar - [Colaborador]",
+          "description": "Comparador de tasas y rendimientos de fondos en Argentina"
+        },
+        {
+          "id": 7,
+          "title": "Ecommerce-NET - C# ASP.NET",
+          "description": "Ecommerce desarrollado con ASP.NET y C# que incluye gestión de productos, carrito, cuentas de usuario, gestión de pedidos."
+        },
+        {
+          "id": 8,
+          "title": "Web Filadelfia Laguna - NextJS, Tailwind",
+          "description": "Página web desarrollada con NextJS + Tailwind para una Iglesia Cristiana"
+        },
+        {
+          "id": 9,
+          "title": "BancAr - Gestión Bancaria - JAVA, MySQL, JSP, TailwindCSS",
+          "description": "Proyecto final de Lab. de Computación IV. Sistema de gestión bancaria desarrollado para administrar las operaciones de una entidad bancaria."
+        },
+        {
+          "id": 10,
+          "title": "Sucursal Virtual Multiempresa - C# .NET, MSSQL + EF, NextJS",
+          "description": "Sistema de gestión de oficina virtual desarrollado con C# .NET, MSSQL + Entity Framework y NextJS. Integrado con Cloudflare R2 y Brevo Emailing."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Hablamos?",
+      "description": "Busco nuevas oportunidades para poner en práctica mis conocimientos y continuar aprendiendo, no dudes en escribirme, contestaré a la brevedad !",
+      "name": "Nombre",
+      "subject": "Asunto",
+      "msg": "Mensaje",
+      "btnSend": "Enviar Email",
+      "sending": "Enviando Email...",
+      "placeholders": {
+        "name": "Juan",
+        "subject": "Oportunidad laboral - Nombre empresa",
+        "msg": "Hola Facu! Me gustaría ofrecerte...",
+        "email": "juan@empresa.com"
+      },
+      "successMsg": "Mensaje enviado con éxito :)",
+      "errorMsg": "Ocurrió un error al enviar el mensaje, puedes intentar contactarme en LinkedIn :)"
+    },
+    "email": {
+      "greeting": "Hola",
+      "p1": "Gracias por contactarte :)",
+      "p2": "Esta es una copia de tu mensaje:",
+      "p3": "Saludos!"
+    }
+  }
 }

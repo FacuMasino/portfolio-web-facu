@@ -1,111 +1,135 @@
 {
-	"menu": {
-		"home": "Home",
-		"about": "About",
-		"projects": "Projects",
-		"contact": "Contact"
-	},
-	"section": {
-		"home": {
-			"title": "Hi! I'm",
-			"description": "Software Developer / Sound Technician & Music Producer",
-			"btnContact": "Get in touch"
-		},
-		"about": {
-			"title": "About me",
-			"description": "I'm a software developer, sound technician and music producer, my passion about music and programming has leaded me to learn both as self-taught person and formal education. I've studied the software development career at UTN General Pacheco Regional Faculty. I love to stay up to date and keep learning about new techs and tools to improve my work.",
-			"sections": [
-				{
-					"title": "Skills",
-					"description": ["ReactJS", "TypeScript","Styled-Components", "MySQL", "C#","Object Oriented Programming"]
-				},
-				{
-					"title": "Education",
-					"description": ["UTN - General Pacheco Regional Faculty", "TAMABA - College of music", "Coderhouse"]
-				},
-				{
-					"title": "Certifications",
-					"description": ["ReactJS Frontend Developer - Coderhouse", "PHP & MySQL - UTN.BA"]
-				}
-		]
-		},
-		"projects": {
-			"title": "Projects",
-			"tagNames": {
-				"all": "All",
-				"web": "Web",
-				"desktop": "Desktop"
-			},
-			"list": [
-				{
-					"id": 1,
-					"title": "PediMe Fast food delivery - ReactJS",
-					"description": "Fast food delivery web developed with ReactJS"
-				},
-				{
-					"id": 2,
-					"title": "Insurance Quoter - JavaScript",
-					"description": "Insurance quoter simulation developed using JavaScript, HTML and Bootstrap"
-				},
-				{
-					"id": 3,
-					"title": "BI Consulting - ReactJS",
-					"description": "Landing page developed with ReactJS, TypeScript and Styled-Components"
-				},
-				{
-					"id": 4,
-					"title": "Vete++ - Management System - C++",
-					"description": "Veterinary management system developed with C++"
-				},
-				{
-					"id": 5,
-					"title": "Print Policies App - C#",
-					"description": "Utility developed in C# for an insurance office"
-				},
-				{
-					"id": 6,
-					"title": "Comparatasas.ar - [Contributor]",
-					"description": "Fees and returns comparator for Argentina's funds"
-				},
-				{
-					"id": 7,
-					"title": "Ecommerce-NET - C# ASP.NET",
-					"description": "Ecommerce developed with ASP.NET and C# that includes product management, shopping cart, user accounts, and order management."
-				},
-				{
-					"id": 8,
-					"title": "Web Filadelfia Laguna - NextJS, Tailwind",
-					"description": "Web page developed with NextJS + Tailwind for a Christian Church"
-				},
-				{
-					"id": 9,
-					"title": "BancAr - Bank Management - JAVA, MySQL, JSP, TailwindCSS",
-					"description": "Final project for Computer Lab IV. Bank management system developed to manage the operations of a banking entity."
-				}
-			]	
-		},
-		"contact": {
-			"title": "Ready to talk?",
-			"description": "I'm looking for new oportunities to put into practice my knowledge and continue learning. Don't hesitate to contact me, I'll get back to you ASAP.",
-			"name": "Name",
-			"subject": "Subject",
-			"msg": "Message",
-			"btnSend": "Send Email",
-			"sending": "Sending Email...",
-			"placeholders": {
-				"name": "John",
-				"subject": "Job opportunity - Company name",
-				"msg": "Hi Facu! I would like to offer you to...",
-				"email": "john@yourcompany.com"
-			},
-			"successMsg": "Message sent successfully :)",
-			"errorMsg": "There was an error while sending the message, you can try to reach me on LinkedIn :)"
-		},
-		"email": {
-			"greeting": "Hi",
-			"p1": "Thanks you for reaching me :)",
-			"p2": "This is a copy of your message:",
-			"p3": "Greetings!"
-		}
-	}
+  "menu": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "section": {
+    "home": {
+      "title": "Hi! I'm",
+      "description": "Software Developer / Sound Technician & Music Producer",
+      "btnContact": "Get in touch"
+    },
+    "about": {
+      "title": "About me",
+      "description": "I'm a software developer, sound technician and music producer, my passion about music and programming has leaded me to learn both as self-taught person and formal education. I've studied the software development career at UTN General Pacheco Regional Faculty. I love to stay up to date and keep learning about new techs and tools to improve my work.",
+      "sections": [
+        {
+          "title": "Skills",
+          "description": [
+            "C# .NET, ASP.NET",
+            "MySQL, SQL Server + Entity Framework",
+            "ReactJS",
+            "TypeScript",
+            "TailwindCSS,Styled-Components",
+            "Object Oriented Programming"
+          ]
+        },
+        {
+          "title": "Education",
+          "description": [
+            "UTN - General Pacheco Regional Faculty",
+            "TAMABA - College of music",
+            "Coderhouse"
+          ]
+        },
+        {
+          "title": "Certifications",
+          "description": [
+            "ReactJS Frontend Developer - Coderhouse",
+            "PHP & MySQL - UTN.BA"
+          ]
+        }
+      ]
+    },
+    "projects": {
+      "title": "Projects",
+      "buttons": {
+        "view": "View project",
+        "code": "View code",
+        "private": "Private repository"
+      },
+      "tagNames": {
+        "all": "All",
+        "web": "Web",
+        "desktop": "Desktop"
+      },
+      "list": [
+        {
+          "id": 1,
+          "title": "PediMe Fast food delivery - ReactJS",
+          "description": "Fast food delivery web developed with ReactJS"
+        },
+        {
+          "id": 2,
+          "title": "Insurance Quoter - JavaScript",
+          "description": "Insurance quoter simulation developed using JavaScript, HTML and Bootstrap"
+        },
+        {
+          "id": 3,
+          "title": "BI Consulting - ReactJS",
+          "description": "Landing page developed with ReactJS, TypeScript and Styled-Components"
+        },
+        {
+          "id": 4,
+          "title": "Vete++ - Management System - C++",
+          "description": "Veterinary management system developed with C++"
+        },
+        {
+          "id": 5,
+          "title": "Print Policies App - C#",
+          "description": "Utility developed in C# for an insurance office"
+        },
+        {
+          "id": 6,
+          "title": "Comparatasas.ar - [Contributor]",
+          "description": "Fees and returns comparator for Argentina's funds"
+        },
+        {
+          "id": 7,
+          "title": "Ecommerce-NET - C# ASP.NET",
+          "description": "Ecommerce developed with ASP.NET and C# that includes product management, shopping cart, user accounts, and order management."
+        },
+        {
+          "id": 8,
+          "title": "Web Filadelfia Laguna - NextJS, Tailwind",
+          "description": "Web page developed with NextJS + Tailwind for a Christian Church"
+        },
+        {
+          "id": 9,
+          "title": "BancAr - Bank Management - JAVA, MySQL, JSP, TailwindCSS",
+          "description": "Final project for Computer Lab IV. Bank management system developed to manage the operations of a banking entity."
+        },
+        {
+          "id": 10,
+          "title": "Virtual Office Multitenant- C# .NET, MSSQL + EF, NextJS",
+          "description": "Virtual office management system developed with C# .NET, MSSQL + Entity Framework and NextJS. Integrated with Cloudflare R2 and Brevo Emailing."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Ready to talk?",
+      "description": "I'm looking for new oportunities to put into practice my knowledge and continue learning. Don't hesitate to contact me, I'll get back to you ASAP.",
+      "name": "Name",
+      "subject": "Subject",
+      "msg": "Message",
+      "btnSend": "Send Email",
+      "sending": "Sending Email...",
+      "placeholders": {
+        "name": "John",
+        "subject": "Job opportunity - Company name",
+        "msg": "Hi Facu! I would like to offer you to...",
+        "email": "john@yourcompany.com"
+      },
+      "successMsg": "Message sent successfully :)",
+      "errorMsg": "There was an error while sending the message, you can try to reach me on LinkedIn :)"
+    },
+    "email": {
+      "greeting": "Hi",
+      "p1": "Thanks you for reaching me :)",
+      "p2": "This is a copy of your message:",
+      "p3": "Greetings!"
+    }
+  }
 }
