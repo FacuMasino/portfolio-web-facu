@@ -1,19 +1,23 @@
 'use client';
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
+import NextLink from 'next/link';
+import { usePathname } from 'next/navigation';
 import { NavLink } from './NavLink';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import MobileMenu from './MobileMenu';
 import { getDictionary } from '@/lib/dictionary';
+import { Locale } from '@/i18n.config';
 
 type MenuTitlesKey = keyof Awaited<ReturnType<typeof getDictionary>>['menu'];
-type NavLink = {
+type NavLinkItem = {
   path: string;
   titleKey: MenuTitlesKey;
 };
-const navLinks: NavLink[] = [
+
+const navLinks: NavLinkItem[] = [
   {
-    titleKey: 'home', // nombre de la clave en diccionario
+    titleKey: 'home',
     path: 'home',
   },
   {
@@ -32,14 +36,21 @@ const navLinks: NavLink[] = [
 
 export const Navbar = ({
   menuTitles,
+  currentLang,
 }: {
   menuTitles: Awaited<ReturnType<typeof getDictionary>>['menu'];
+  currentLang: Locale;
 }) => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+  const pathname = usePathname();
 
   const handleNavbarClick = () => {
-    console.log(isNavbarOpen);
     setIsNavbarOpen(!isNavbarOpen);
+  };
+
+  const getSwitchLanguagePath = () => {
+    const newLang = currentLang === 'es' ? 'en' : 'es';
+    return pathname.replace(`/${currentLang}`, `/${newLang}`);
   };
 
   return (
@@ -55,24 +66,39 @@ export const Navbar = ({
         >
           {'<FM/>'}
         </Link>
+        
         <div className="mobile-menu block md:hidden">
           {!isNavbarOpen ? (
             <button aria-label='menu' onClick={handleNavbarClick}>
-              <Bars3Icon className="h-5 w-5" />
+              <Bars3Icon className="h-6 w-6 text-white" />
             </button>
           ) : (
             <button onClick={handleNavbarClick}>
-              <XMarkIcon className="h-5 w-5" />
+              <XMarkIcon className="h-6 w-6 text-white" />
             </button>
           )}
         </div>
-        <div className="menu hidden md:block md:w-auto" id="navbar">
-          <ul className="mt-0 flex p-4 md:flex-row md:space-x-4 md:p-0">
+        
+        <div className="menu hidden items-center md:flex md:w-auto" id="navbar">
+          <ul className="mt-0 flex items-center p-4 md:flex-row md:space-x-2 md:p-0">
             {navLinks.map((link, index) => (
               <li key={index}>
                 <NavLink href={link.path}>{menuTitles[link.titleKey]}</NavLink>
               </li>
             ))}
+            <li className="ml-4 border-l border-[#33353F] pl-4">
+              <NextLink
+                href={getSwitchLanguagePath()}
+                className="flex items-center gap-2 rounded-full border border-[#33353F] bg-[#18191E] px-4 py-2 text-sm font-medium text-white transition-all duration-200 hover:border-blue-500 hover:bg-[#2a2b30] hover:shadow-lg hover:shadow-blue-500/20"
+              >
+                <span className="text-lg">
+                  {currentLang === 'es' ? '🇺🇸' : '🇦🇷'}
+                </span>
+                <span className="hidden lg:inline">
+                  {currentLang === 'es' ? 'EN' : 'ES'}
+                </span>
+              </NextLink>
+            </li>
           </ul>
         </div>
       </div>
@@ -81,6 +107,8 @@ export const Navbar = ({
           menuTitles={menuTitles}
           links={navLinks}
           onClickFn={handleNavbarClick}
+          currentLang={currentLang}
+          switchLanguagePath={getSwitchLanguagePath()}
         />
       ) : null}
     </nav>

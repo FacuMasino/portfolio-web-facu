@@ -31,7 +31,7 @@ const AboutSection = ({ about }: { about: AboutLang }) => {
         {isMobile ? "" : <Image
           loader={imageKitLoader}
           className="rounded hidden md:block"
-          src="aboutimg.jpg?updatedAt=1708120599646"
+          src="images/aboutimg.jpg"
           alt="hero image"
           width={500}
           height={500}

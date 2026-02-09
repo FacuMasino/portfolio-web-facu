@@ -18,7 +18,7 @@ export default async function Home({ params }: { params: { lang: Locale } }) {
 
   return (
     <main className="flex min-h-screen flex-col bg-[#131313]">
-      <Navbar menuTitles={menu} />
+      <Navbar menuTitles={menu} currentLang={params.lang} />
       <div className="container mx-auto mt-24 px-12 py-4">
         <HeroSection dictionary={dictionary} />
         <AboutSection about={dictionary.section.about} />

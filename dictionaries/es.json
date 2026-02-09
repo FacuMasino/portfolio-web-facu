@@ -108,9 +108,9 @@
         }
       ]
     },
-    "contact": {
-      "title": "Hablamos?",
-      "description": "Busco nuevas oportunidades para poner en práctica mis conocimientos y continuar aprendiendo, no dudes en escribirme, contestaré a la brevedad !",
+"contact": {
+      "title": "Hablemos",
+      "description": "¿Tienes alguna duda o proyecto que quieras comentar? Puedes encontrarme en cualquiera de estas plataformas.",
       "name": "Nombre",
       "subject": "Asunto",
       "msg": "Mensaje",

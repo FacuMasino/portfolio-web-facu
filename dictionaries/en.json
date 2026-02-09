@@ -108,9 +108,9 @@
         }
       ]
     },
-    "contact": {
-      "title": "Ready to talk?",
-      "description": "I'm looking for new oportunities to put into practice my knowledge and continue learning. Don't hesitate to contact me, I'll get back to you ASAP.",
+"contact": {
+      "title": "Let's talk",
+      "description": "Have a question or project you'd like to discuss? You can find me on any of these platforms.",
       "name": "Name",
       "subject": "Subject",
       "msg": "Message",
