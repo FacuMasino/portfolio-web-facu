@@ -12,7 +12,6 @@
     "@formatjs/intl-localematcher": "^0.5.2",
     "@heroicons/react": "^2.1.1",
     "@next/third-parties": "^14.1.0",
-    "@react-email/components": "0.0.14",
     "@types/negotiator": "^0.6.3",
     "@vercel/analytics": "^1.2.0",
     "i18next": "^23.7.11",
@@ -22,10 +21,8 @@
     "prettier-plugin-tailwindcss": "^0.5.10",
     "react": "^18",
     "react-dom": "^18",
-    "react-email": "^2.0.0",
     "react-i18next": "^13.5.0",
-    "react-scroll": "^1.9.0",
-    "resend": "^2.1.0"
+    "react-scroll": "^1.9.0"
   },
   "devDependencies": {
     "@types/node": "^20",
