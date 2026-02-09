@@ -11,21 +11,22 @@ type Menu = {
   [key: string]: string;
 };
 
-export default async function Home({ params }: { params: { lang: Locale } }) {
+export default async function Home({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params;
   // Titulos de menu traducidos para usar en client component
-  const dictionary = await getDictionary(params.lang);
+  const dictionary = await getDictionary(lang as Locale);
   const { menu } = dictionary;
 
   return (
     <main className="flex min-h-screen flex-col bg-[#131313]">
-      <Navbar menuTitles={menu} currentLang={params.lang} />
+      <Navbar menuTitles={menu} currentLang={lang as Locale} />
       <div className="container mx-auto mt-24 px-12 py-4">
         <HeroSection dictionary={dictionary} />
         <AboutSection about={dictionary.section.about} />
         <ProjectsSection projects={dictionary.section.projects} />
         <ContactSection
           dictionary={dictionary.section.contact}
-          currentLang={params.lang}
+          currentLang={lang as Locale}
         />
       </div>
       <Footer />
